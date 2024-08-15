@@ -26,9 +26,9 @@ Embedding and Positional Encoding: Both Title and Description inputs undergo tok
 
 ### ii). Attention and Feed-Forward Network: Each encoder block is composed of:
 
-Multi-Head Self-Attention layers to capture relationships between tokens.   
-Feed-Forward Neural Networks (FFN) with Add & Norm layers to enhance the learned representations.   
-Concatenation and Global Pooling: The outputs from both encoders are concatenated and passed through a global max pooling layer, followed by a fully connected layer.   
+i. Multi-Head Self-Attention layers to capture relationships between tokens.   
+ii. Feed-Forward Neural Networks (FFN) with Add & Norm layers to enhance the learned representations.   
+iii. Concatenation and Global Pooling: The outputs from both encoders are concatenated and passed through a global max pooling layer, followed by a fully connected layer.   
 
 ### iii). Classification: The final dense layer outputs predictions across the four classes.
 
