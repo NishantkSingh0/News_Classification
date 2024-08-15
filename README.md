@@ -56,6 +56,6 @@ By leveraging parallel encoders, the model effectively mitigates these challenge
 This project demonstrates a novel approach to text classification using parallel Transformer encoders. By processing both the title and description of a news article separately and then combining their outputs, the model achieves impressive performance, attaining an accuracy of 99.6% on the test set. The combination of attention mechanisms and feed-forward layers allows for a deep understanding of the input data, making this architecture particularly effective for tasks that require nuanced contextual comprehension.
 
 # Key Achievements:
-### i. __High Accuracy:__ Achieved 99.6% accuracy using only 15,000 samples from the AG News dataset.
-### ii. __Innovative Architecture:__ The dual-encoder setup captures a richer representation of the data by leveraging both title and description.
-### iii. __Scalability:__ The architecture can be extended to other classification tasks with similar data structures.
+#### i. __High Accuracy:__ Achieved 99.6% accuracy using only 15,000 samples from the AG News dataset.
+#### ii. __Innovative Architecture:__ The dual-encoder setup captures a richer representation of the data by leveraging both title and description.
+#### iii. __Scalability:__ The architecture can be extended to other classification tasks with similar data structures.
