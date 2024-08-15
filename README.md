@@ -13,7 +13,7 @@ iv. _Sci/Tech_
 Each entry in the dataset includes both a title and a description of the news article. For this project, I selected the first 15,000 rows from the dataset to train the model.
 
 ### ii). ___Data Preprocessing___
-The text data (both title and description) was preprocessed to ensure consistency and to facilitate efficient training. The preprocessing steps included padding, tokenization, and embedding, along with the incorporation of positional encodings to preserve the order of words.
+The text data (both title and description) was preprocessed to ensure consistency and to facilitate efficient training. The preprocessing steps included tokenization, padding, and embedding, along with the incorporation of positional encodings to preserve the order of words.
 
 ## 2. Model Architecture:
 The architecture is built around the Transformer encoder, with a key feature being the parallel processing of the title and description using separate encoders.
