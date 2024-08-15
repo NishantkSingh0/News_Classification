@@ -2,7 +2,7 @@
 This project focuses on classifying news articles using a customized model based on the Transformer architecture. The architecture is designed to process and combine information from both the title and description of news articles, enabling high accuracy in classification.
 
 ## 1. Dataset:
-### [AG News](https://www.kaggle.com/datasets/amananandrai/ag-news-classification-dataset)
+### i). [AG News](https://www.kaggle.com/datasets/amananandrai/ag-news-classification-dataset)
 The dataset used in this project is the AG News dataset, a widely used benchmark dataset for text classification. The dataset contains four classes representing different news topics:
 
 i. _World_  
@@ -12,25 +12,25 @@ iv. _Sci/Tech_
   
 Each entry in the dataset includes both a title and a description of the news article. For this project, I selected the first 15,000 rows from the dataset to train the model.
 
-### ___Data Preprocessing___
+### ii). ___Data Preprocessing___
 The text data (both title and description) was preprocessed to ensure consistency and to facilitate efficient training. The preprocessing steps included padding, tokenization, and embedding, along with the incorporation of positional encodings to preserve the order of words.
 
 ## 2. Model Architecture:
 The architecture is built around the Transformer encoder, with a key feature being the parallel processing of the title and description using separate encoders.
 
-### ___Architecture Overview___
+### i). ___Architecture Overview___
 Dual Encoder Structure: The model employs two parallel encoder blocks:
   #### __Encoder 1:__ Processes the Description of the news article.
   #### __Encoder 2:__ Processes the Title of the news article.
 Embedding and Positional Encoding: Both Title and Description inputs undergo tokenization, padding, embedding, and positional encoding before being fed into their respective encoders.
 
-### Attention and Feed-Forward Network: Each encoder block is composed of:
+### ii). Attention and Feed-Forward Network: Each encoder block is composed of:
 
 Multi-Head Self-Attention layers to capture relationships between tokens.   
 Feed-Forward Neural Networks (FFN) with Add & Norm layers to enhance the learned representations.   
 Concatenation and Global Pooling: The outputs from both encoders are concatenated and passed through a global max pooling layer, followed by a fully connected layer.   
 
-### Classification: The final dense layer outputs predictions across the four classes.
+### iii). Classification: The final dense layer outputs predictions across the four classes.
 
 ![Screenshot (126)](https://github.com/user-attachments/assets/02e52102-2872-49c5-b2db-e6334ad12bc2)
 
